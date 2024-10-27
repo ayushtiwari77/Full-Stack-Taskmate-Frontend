@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1200px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: left;
+}
+
+main {
+  min-height: 92vh;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.login-form,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  font-size: 16px;
+  text-decoration: none;
+  height: 50px;
+  width: 700px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button {
+  padding: 15px 60px;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  margin: 40px 0px;
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.links:disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.upper-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.task-card {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.118);
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+#delete {
+  margin: 0;
+}
+
+.left-taskcard {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 10px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+#task-description {
+  font-size: 18px;
+}
+
+.right-taskcard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 0;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Checkmark character */
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 40px;
+  color: #000;
+}
+
+.task-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
